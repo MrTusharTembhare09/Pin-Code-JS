@@ -1,6 +1,6 @@
-// Validating a 6-digit Indian PIN Code (Only digits, no alphabets or special chars at start or end)
+// Validating a 6-digit Indian PIN Code (Allows optional space in the middle)
 function validatePinCode(pinCode) {
-    const pinCodeRegex = /^[0-9]{6}$/;
+    const pinCodeRegex = /^[0-9]{3} ?[0-9]{3}$/;
     return pinCodeRegex.test(pinCode);
 }
 
